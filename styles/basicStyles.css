@@ -1,0 +1,137 @@
+/* ============ The Rundown ================== 
+
+    1. Global Styles
+    2. Navbar Style
+    3. Hero styling
+    4. Quote styling
+    5. Contact Section
+    6. External Links
+*/
+
+
+/* ============ 1. Global Styles  ================*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ============ Component Styles  ================ */
+
+/* 2. Navbar styling */
+
+
+.navigation-bar {
+    background-color: cornflowerblue;
+    position: sticky;
+    display: flex;
+    top: .25rem;
+    height: 2rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: white;
+    transition: color .5s ease-in-out;
+}
+
+.navigation-link:hover {
+     color: black;
+}
+
+.navigation-bar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+/* 3. Hero Styling */
+
+.page-title {
+    font-weight: 300;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
+#splash-image {
+    border-radius: 20px;
+}
+
+/* 4. Quote styling */
+
+.front-page-quote {
+    display: flex;
+    background-color: lightgray;
+    height: 45vh;
+    width: 45vh;
+    border-radius: 20px;
+    margin-left: 8rem;
+    margin-top: -40rem;
+    position: absolute;
+    opacity: .60;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+.front-page-quote-text {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: calc(2rem + 1vw)
+    
+}
+
+/* 5. Contact Section */
+
+.contact-me {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    border: 3px solid darkgray;
+    box-shadow: 5px 5px 5px gray;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+button {
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    transition: 1s;
+
+}
+
+button:hover {
+    transform: translateY(5px);
+    transition: 1s;
+}
+
+/* 6. External links */
+
+.bottom-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.external-link {
+    transition: color .3s ease-in-out;
+}
+
+.external-link:hover {
+    color: gray;
+}
