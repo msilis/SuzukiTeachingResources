@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Link Css -->
+    <link type="text/css" rel="stylesheet" href="../styles/basicStyles.css">
+</head>
+<body>
+    <!--Page Navigation-->
+    
+    <nav class="navigation-bar">
+        <ul class="navigation-bar-list">
+            <a href="../index.html" class="navigation-link"><li class="navigation-bar-list-item">Home</li></a>            
+            <a href="content-pages/violin-hold.html" class="navigation-link"><li class="navigation-bar-list-item">Violin</li></a>
+            <a href="content-pages/bow-hold.html" class="navigation-link"><li class="navigation-bar-list-item">Bow Hold</li></a>
+            <a href="content-pages/motivation.html" class="navigation-link"><li class="navigation-bar-list-item">Motivation</li></a>
+            <a href="content-pages/practice-charts.html" class="navigation-link"><li class="navigation-bar-list-item">Practice Charts</li></a>
+        </ul>
+    </nav>
+    <!--Page title-->
+    <div>
+        <h1 class="page-title">Contact Me</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="contact-form">
+        <form>
+            <label>Name:
+                <input name="name" autocomplete="name" />
+            </label>
+            <label>Email:
+                <input name="email" />
+            </label>
+            <textarea rows="5" cols="40" id="text-input" placeholder="Message..."></textarea>
+            <fieldset>
+                <legend>What would you like help with?</legend>
+                <label><input type="radio" name="radio" value="bow-hold" />Bow Hold</label>
+                <label><input type="radio" name="radio" value="violin-hold" />Violin Hold</label>
+                <label><input type="radio" name="radio" value="motivation" />Motivation</label>
+            </fieldset>
+            <button type="submit" id="form-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer bar-->
+    <footer>
+    
+        <div class="bottom-links">
+            <a href="https://www.britishsuzuki.org.uk/" target="_blank" class="external-link">British Suzuki Music Association</a>
+            <a href="http://londonsuzukigroup.co.uk/" target="_blank" class="external-link">London Suzuki Group</a>
+        </div>
+        <div>
+            <p>Made by hand / 2022 / <a href="http://mikssilis.com" target="_blank" class="external-link">Miks Silis</a></p>
+        </div>
+        </footer>
+    
+</body>
+</html>

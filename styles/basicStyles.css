@@ -2,10 +2,13 @@
 
     1. Global Styles
     2. Navbar Style
-    3. Hero styling
-    4. Quote styling
-    5. Contact Section
-    6. External Links
+    3. Footer Style
+    4. Hero styling
+    5. Quote styling
+    6. Contact Section
+    7. External Links
+    8. Table Styles
+    9. Form Styles
 */
 
 
@@ -19,6 +22,10 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+.last-article {
+    margin-bottom: 1.5rem;
 }
 
 /* ============ Component Styles  ================ */
@@ -53,7 +60,19 @@ a {
     justify-content: flex-start;
 }
 
-/* 3. Hero Styling */
+/* 3. Footer Style */
+
+footer {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+footer>div {
+    padding-left: 5px;
+}
+
+
+/* 4. Hero Styling */
 
 .page-title {
     font-weight: 300;
@@ -69,7 +88,7 @@ a {
     border-radius: 20px;
 }
 
-/* 4. Quote styling */
+/* 5. Quote styling */
 
 .front-page-quote {
     display: flex;
@@ -92,7 +111,7 @@ a {
     
 }
 
-/* 5. Contact Section */
+/* 6. Contact Section */
 
 .contact-me {
     display: flex;
@@ -103,6 +122,7 @@ a {
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: .75rem;
     padding: .5rem;
     border-radius: 10px;
 }
@@ -121,7 +141,7 @@ button:hover {
     transition: 1s;
 }
 
-/* 6. External links */
+/* 7. Internal/External links */
 
 .bottom-links {
     display: flex;
@@ -134,4 +154,44 @@ button:hover {
 
 .external-link:hover {
     color: gray;
+}
+
+.internal-link {
+    color: darkred;
+    transition: color .3s ease-in-out;
+}
+
+.internal-link:hover {
+    color: gray;
+}
+
+/* 8. Table Styles */
+
+table {
+    text-align: left;
+    
+}
+
+td, th {
+    padding-right: 1rem;
+    
+}
+
+/* 9. Form Styles */
+
+form {
+    display: grid;
+}
+
+label { 
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    margin-top: .5rem;
+}
+
+#form-button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
