@@ -9,6 +9,7 @@
     7. External Links
     8. Table Styles
     9. Form Styles
+    10. Favourite Styles
 */
 
 
@@ -194,4 +195,20 @@ fieldset {
 #form-button {
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+/* 10. Favourite Styles*/
+
+.save-span {
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+    vertical-align: super;
+    font-size: .75rem;
+    transition: color 1s ease-in-out;
+}
+
+.save-span:hover{
+    color: red;
+    cursor: pointer;
 }
