@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Saved Resources</title>
     <!-- Google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,53 +13,31 @@
     <link type="text/css" rel="stylesheet" href="../styles/basicStyles.css">
 </head>
 <body>
-    <!--Page Navigation-->
-    
+    <!-- Navigation -->
     <nav class="navigation-bar">
         <ul class="navigation-bar-list">
-            <li class="navigation-bar-list-item"><a href="../index.html" class="navigation-link">Home</li></a>            
-            <li class="navigation-bar-list-item"><a href="violin-hold.html" class="navigation-link">Violin</li></a>
+            <li class="navigation-bar-list-item"><a href="../index.html" class="navigation-link">Home</li></a>
             <li class="navigation-bar-list-item"><a href="bow-hold.html" class="navigation-link">Bow Hold</li></a>
             <li class="navigation-bar-list-item"><a href="motivation.html" class="navigation-link">Motivation</li></a>
             <li class="navigation-bar-list-item"><a href="practice-charts.html" class="navigation-link">Practice Charts</li></a>
         </ul>
     </nav>
-    <!--Page title-->
-    <div>
-        <h1 class="page-title">Contact Me</h1>
+    <div id="saved-resource-list-container">
+        <h5 id="no-tag-display"></h5>
+        <ul id="saved-resource-list">
+            
+        </ul>
     </div>
-
-    <!-- Content -->
-    <div class="contact-form">
-        <form>
-            <label>Name:
-                <input name="name" autocomplete="name" />
-            </label>
-            <label>Email:
-                <input name="email" />
-            </label>
-            <textarea rows="5" cols="40" id="text-input" placeholder="Message..."></textarea>
-            <fieldset>
-                <legend>What would you like help with?</legend>
-                <label><input type="radio" name="radio" value="bow-hold" />Bow Hold</label>
-                <label><input type="radio" name="radio" value="violin-hold" />Violin Hold</label>
-                <label><input type="radio" name="radio" value="motivation" />Motivation</label>
-            </fieldset>
-            <button type="submit" id="form-button">Submit</button>
-        </form>
-    </div>
-    
     <!-- Footer bar-->
     <footer>
-    
         <div class="bottom-links">
             <a href="https://www.britishsuzuki.org.uk/" target="_blank" class="external-link">British Suzuki Music Association</a>
             <a href="http://londonsuzukigroup.co.uk/" target="_blank" class="external-link">London Suzuki Group</a>
         </div>
-        <div>
+        <div >
             <p>Made by hand / 2022 / <a href="http://mikssilis.com" target="_blank" class="external-link">Miks Silis</a></p>
         </div>
         </footer>
-    
+        <script src="../js/resource-list.js"></script>
 </body>
 </html>

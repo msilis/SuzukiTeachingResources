@@ -10,6 +10,7 @@
     8. Table Styles
     9. Form Styles
     10. Favourite Styles
+    11. Display PDF
 */
 
 
@@ -149,11 +150,19 @@ button:hover {
     gap: 2rem;
 }
 
-.external-link {
+.external-link-site {
     transition: color .3s ease-in-out;
 }
 
-.external-link:hover {
+.external-link-pdf {
+    transition: color .3s ease-in-out;
+}
+
+.external-link-site:hover {
+    color: gray;
+}
+
+.external-link-pdf:hover {
     color: gray;
 }
 
@@ -202,7 +211,7 @@ fieldset {
 .save-span {
     height: 20px;
     width: 20px;
-    margin-left: 1rem;
+    margin-left: .75rem;
     vertical-align: super;
     font-size: .75rem;
     transition: color 1s ease-in-out;
@@ -211,4 +220,60 @@ fieldset {
 .save-span:hover{
     color: red;
     cursor: pointer;
+}
+
+.saved-tag {
+    color: lightgray;
+    vertical-align: super;
+    margin-left: .75rem;
+    font-size: .75rem;
+    height: 20px;
+    width: 20px;
+}
+
+/* 11. Display PDF */
+
+#file-preview {
+    display: none;
+}
+
+/* Page Like Styling  */
+
+.page-like {
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 8.25rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.page-like-enabled{
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 4rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.page-like:hover{
+    cursor: pointer;
+    background-color: palegoldenrod;
+    transition: .5s;
+}
+
+.page-like:active{
+    transform: translateY(5px);
+
+}
+
+#thumb-icon {
+    height: 20px;
+    width: 15px;
+    
 }
