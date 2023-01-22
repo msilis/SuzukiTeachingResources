@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <!--Css link-->
     <link type="text/css" rel="stylesheet" href="../styles/basicStyles.css">
+    <link type="text/css" rel="stylesheet" href="../styles/commentStyles.css">
 </head>
 <body>
     <!--Page Navigation-->
@@ -69,11 +70,39 @@
             </tr>
         </table>
     </article>
+    <!-- Like the page-->
     <div id="like-container">
         <div class="page-like">
         <img src="../media/Thumbs-up-icon.png" id="thumb-icon"><p id="like-text">Like this page.</p>
         </div>
     </div>
+    <div id="comment-container">
+        <div id="comment-form">
+            <!-- Form to capture comments -->
+            <h4>Questions? Leave a comment here:</h4>
+            <form>
+                <label>Name:
+                    <input name="name" autocomplete="name" id="comment-name"/>
+                </label>
+                <label>Email:
+                    <input name="email" id="comment-email"/>
+                </label>
+                <textarea rows="5" cols="40" id="text-input" placeholder="Question..."></textarea>
+                <button type="submit" id="comment-submit-button">Submit Comment</button>
+            </form>
+        </div>
+        <div id="comment-display">
+            <!-- Display entered comments -->
+            <div id="comment-name-container">
+
+            </div>
+            <div id="comment-text">
+
+            </div>
+
+        </div>
+    </div>
+    
     <!-- Footer bar-->
     <footer>
     <div class="bottom-links">
@@ -85,5 +114,6 @@
     </div>
     </footer>
     <script src="../js/common.js"></script>
+    <script src="../js/comment.js"></script>
 </body>
 </html>

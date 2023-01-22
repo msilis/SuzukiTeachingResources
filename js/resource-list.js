@@ -8,8 +8,7 @@ function displayResources(){
     } else {
         noTag.innerHTML = 'Here are your saved resources.'
     }
-    console.log(savedInfo)
-
+    //Loop through local storage and display saved resources
     savedInfo.forEach(element => {
         let link = tagList.appendChild(document.createElement('li')).appendChild(document.createElement('a'));
         link.href = element[1];
@@ -20,4 +19,5 @@ function displayResources(){
     
 }
 
+//Check if there are any saved resources in local storae
 window.onload = displayResources()

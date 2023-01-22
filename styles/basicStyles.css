@@ -143,6 +143,23 @@ button:hover {
     transition: 1s;
 }
 
+#contact-button {
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    transition: 1s;
+    margin-top: .5rem;
+    
+
+}
+
+#contact-button:hover {
+    transform: translateY(5px);
+    transition: 1s;
+}
+
 /* 7. Internal/External links */
 
 .bottom-links {

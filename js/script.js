@@ -116,7 +116,7 @@ function checkLikes(){
 
 }
 
-
+//Load likes and saved resources from local storage
 window.onload = checkSaveTag()
 window.onload = displaySavedTag()
 window.onload = checkLikes()
