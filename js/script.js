@@ -34,7 +34,6 @@ function handleSaveClick(event){
         event.target.className = 'saved-tag'
         displaySavedTag();
         alert(`You have ${storedInfo.length} items in your saved folder.`)
-        console.log(savedInfo)
         if(tagDisplay.innerHTML == 'Nothing saved yet.'){
             tagDisplay.innerHTML = '<a href="saved-resources.html">Click here to see saved resources.</a>'
         }
@@ -94,9 +93,7 @@ function handleLike(){
     pageLiked.innerHTML = 'Liked'
     likeButton.firstElementChild.className = 'page-like-enabled'
     let storeText = storeLike[0].innerText;
-    console.log(storeText)
     currentlyStoredLikes.push(storeText)
-    console.log(currentlyStoredLikes)
     localStorage.setItem('like', JSON.stringify(currentlyStoredLikes))
     console.log('like saved')
     
